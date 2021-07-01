@@ -1,0 +1,18 @@
+ALGORITHM Read_sentence 
+VAR
+nbr_ch;nbr_voy;nbr-wrd: INTEGER:=0 ;
+sent: STRING ;
+i: INTEGER:=0 ;
+BEGIN 
+WRITE('write a sentence:')
+READ(sent);
+WHILE (sent[i] !='.') DO
+   IF (sent[i]==' ') THEN
+       nbr_wrd:=nbr_wrd+1 ;
+   ELSE (sent[i]='o') OR (sent[i]='i') OR (sent[i]='y') OR (sent[i]='e') OR (sent[i]='a') OR (sent[i]='u') OR THEN
+       nbr_voy:=nbr_voy +1;
+   END_IF  
+   i:=i+1 ;
+END_WHILE
+
+
